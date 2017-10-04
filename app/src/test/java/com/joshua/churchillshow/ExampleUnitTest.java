@@ -1,4 +1,4 @@
-package comjoshua56.httpsgithub.churchilshow;
+package com.joshua.churchillshow;
 
 import org.junit.Test;
 

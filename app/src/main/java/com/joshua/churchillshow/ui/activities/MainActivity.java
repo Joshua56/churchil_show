@@ -1,33 +1,29 @@
-package comjoshua56.httpsgithub.churchilshow;
+package com.joshua.churchillshow.ui.activities;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.joshua.churchillshow.R;
 
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar mToolbar;
     private ViewPager mPager;
     private MyPagerAdapter mAdapters;
-
-
-
 
 
     @Override
@@ -38,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         TabLayout mTablayout = (TabLayout) findViewById(R.id.tab_layout);
-        mPager=(ViewPager) findViewById(R.id.pager);
+        mPager = (ViewPager) findViewById(R.id.pager);
 
     }
 
@@ -64,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public static class MyFragment extends Fragment{
+    public static class MyFragment extends Fragment {
 
-        public MyFragment(){
+        public MyFragment() {
 
 
         }
@@ -82,16 +78,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
- private class MyPagerAdapter extends FragmentPagerAdapter {
+    private class MyPagerAdapter extends FragmentPagerAdapter {
 
 
-     public MyPagerAdapter(FragmentManager fm) {
-         super(fm);
-     }
+        public MyPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
 
-     @Override
+        @Override
         public Fragment getItem(int position) {
-         MainActivityMyFragment
+            //MainActivityMyFragment
             return null;
         }
 
@@ -100,9 +96,9 @@ public class MainActivity extends AppCompatActivity {
             return 3;
         }
 
-     @Override
-     public CharSequence getPageTitle(int position) {
-         return super.getPageTitle(position);
-     }
- }
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return super.getPageTitle(position);
+        }
+    }
 }
