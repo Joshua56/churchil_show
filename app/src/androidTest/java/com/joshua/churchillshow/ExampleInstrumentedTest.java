@@ -1,4 +1,4 @@
-package comjoshua56.httpsgithub.churchilshow;
+package com.joshua.churchillshow;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
